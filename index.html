@@ -1,201 +1,185 @@
 <!doctype html>
-
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
 
-<link rel="stylesheet" href="portfolio.css" />
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet"/>
+  <!-- Styles -->
+  <link rel="stylesheet" href="portfolio.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet"/>
 </head>
-
 <body>
 
 <main>
 
-<!-- HERO AREA -->
+  <!-- HERO AREA -->
+  <section id="introArea">
+    <header class="topbar">
+      <div class="brand">Johanthan.doe</div>
 
-<section id="introArea">
+      <div class="navbar">
+        <!-- hidden checkbox for CSS-only toggle -->
+        <input type="checkbox" id="nav-toggle" aria-label="Toggle navigation" />
+        <label for="nav-toggle" class="hamburger" aria-hidden="true">
+          <span></span>
+        </label>
 
-<header class="topbar">
-<div class="brand">Johanthan.doe</div>
+        <nav aria-label="Main">
+          <ul>
+            <li><a href="#introArea"><span class="active-link">Home</span></a></li>
+            <li><a href="#portfolioSection">My work</a></li>
+            <li><a href="#clientSection">Clients</a></li>
+            <li><a href="#contactArea" class="cta-btn">Hire me</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-<nav>
-<ul>
-<li><a href="#"><span class="active-link">Home</span></a></li>
-<li><a href="#">My work</a></li>
-<li><a href="#">Clients</a></li>
-<li><a href="#" class="cta-btn">Hire me</a></li>
-</ul>
-</nav>
+    <section class="hero-wrapper">
+      <!-- Scroll indicator -->
+      <div class="indicator" aria-hidden="true">
+        <span class="circle current"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+      </div>
 
-</header>
+      <!-- Hero grid (text | image) -->
+      <div class="hero-inner">
+        <div class="hero-text">
+          <!-- Optional: Add an H1 for SEO (hidden visually if you prefer) -->
+          <h1 style="position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden;">
+            Portfolio of Johanthan Doe
+          </h1>
 
-<section class="hero-wrapper">
+          <a href="#portfolioSection" class="main-action">👁 My work.</a>
+        </div>
 
-<div class="indicator">
-<span class="circle current"></span>
-<span class="circle"></span>
-<span class="circle"></span>
-<span class="circle"></span>
-</div>
+        <div class="hero-photo">
+          <img src="images/man.jpg" alt="Portrait of Johanthan Doe"/>
+        </div>
+      </div>
+    </section>
+  </section>
 
-<div class="hero-text">
+  <!-- WORK SECTION -->
+  <section id="portfolioSection">
+    <div class="section-heading">
+      <h2>My work</h2>
+      <p>
+        I've had the pleasure of working with multiple Fortune 500 companies,
+        designing and implementing both frontend and backend
+      </p>
+    </div>
 
+    <div class="work-gallery">
+      <img src="./images/work-4.jpeg" alt="Project 1 preview">
+      <img src="./images/work-5.jpeg" alt="Project 2 preview">
+      <img src="./images/work-7.jpeg" alt="Project 3 preview">
+      <img src="./images/work-6.jpeg" alt="Project 4 preview">
+      <img src="./images/work-1.png"  alt="Project 5 preview">
+      <img src="./images/work-9.jpeg" alt="Project 6 preview">
+      <img src="./images/work-2.jpeg" alt="Project 7 preview">
+      <img src="./images/work-3.png"  alt="Project 8 preview">
+      <img src="./images/work-8.jpeg" alt="Project 9 preview">
+    </div>
+  </section>
 
-<a href="#" class="main-action">👁 My work.</a>
+  <!-- CLIENTS -->
+  <section id="clientSection">
+    <div class="section-heading">
+      <h2>Clients</h2>
+      <p>
+        I’ve had the pleasure of working with multiple Fortune 500 companies,
+        designing and implementing both frontend and backend.
+      </p>
+    </div>
 
-</div>
+    <div class="client-box">
+      <div class="client-icon">
+        <img src="./images/apple-image.png" alt="Apple logo">
+      </div>
+      <div class="client-details">
+        <h3>Apple, Inc.</h3>
+        <div class="skill-tags">
+          <span>UI/UX</span>
+          <span>Frontend Development</span>
+        </div>
+        <p>
+          I’ve had the pleasure of working with multiple Fortune 500 companies,
+          designing and implementing both frontend and backend.
+        </p>
+      </div>
+    </div>
 
-<div class="hero-photo">
-<img src="images/man.jpg" alt="profile"/>
-</div>
+    <div class="client-box">
+      <div class="client-icon">
+        <img src="./images/apple-image.png" alt="Apple logo">
+      </div>
+      <div class="client-details">
+        <h3>Apple, Inc.</h3>
+        <div class="skill-tags">
+          <span>UI/UX</span>
+          <span>Frontend Development</span>
+        </div>
+        <p>
+          I’ve had the pleasure of working with multiple Fortune 500 companies,
+          designing and implementing both frontend and backend.
+        </p>
+      </div>
+    </div>
 
-</section>
-</section>
+    <div class="client-box">
+      <div class="client-icon">
+        <img src="./images/apple-image.png" alt="Apple logo">
+      </div>
+      <div class="client-details">
+        <h3>Apple, Inc.</h3>
+        <div class="skill-tags">
+          <span>UI/UX</span>
+          <span>Frontend Development</span>
+        </div>
+        <p>
+          I’ve had the pleasure of working with multiple Fortune 500 companies,
+          designing and implementing both frontend and backend.
+        </p>
+      </div>
+    </div>
+  </section>
 
-<!-- WORK SECTION -->
+  <!-- CONTACT -->
+  <section id="contactArea">
+    <div class="section-heading">
+      <h2>Hire me</h2>
+      <p>Feel free to contact me any time, through any method below</p>
+    </div>
 
-<section id="portfolioSection">
+    <div class="contact-layout">
+      <form class="message-form" action="#" method="post">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Enter your name" autocomplete="name">
 
-<div class="section-heading">
-<h2>My work</h2>
-<p>
-I've had the pleasure of working with multiple Fortune 500 companies,
-designing and implementing both frontend and backend
-</p>
-</div>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="Enter your email" autocomplete="email">
 
-<div class="work-gallery">
-<img src="./images/work-4.jpeg">
-<img src="./images/work-5.jpeg">
-<img src="./images/work-7.jpeg">
-<img src="./images/work-6.jpeg">
-<img src="./images/work-1.png">
-<img src="./images/work-9.jpeg">
-<img src="./images/work-2.jpeg">
-<img src="./images/work-3.png">
-<img src="./images/work-8.jpeg">
-</div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="Write your message..."></textarea>
 
-</section>
+        <button class="submit-btn" type="submit">Send it!</button>
+      </form>
 
-<!-- CLIENTS -->
+      <div class="contact-side">
+        <p class="phone-number">555-555-1234</p>
+        <a href="mailto:email@mydomain.com" class="email-link">email@mydomain.com</a>
 
-<section id="clientSection">
-
-<div class="section-heading">
-<h2>Clients</h2>
-<p>
-I’ve had the pleasure of working with multiple Fortune 500 companies,
-designing and implementing both frontend and backend.
-</p>
-</div>
-
-<div class="client-box">
-<div class="client-icon">
-<img src="./images/apple-image.png">
-</div>
-
-<div class="client-details">
-<h3>Apple, Inc.</h3>
-
-<div class="skill-tags">
-<span>UI/UX</span>
-<span>Frontend Development</span>
-</div>
-
-<p>
-I’ve had the pleasure of working with multiple Fortune 500 companies,
-designing and implementing both frontend and backend.
-</p>
-</div>
-</div>
-
-<div class="client-box">
-<div class="client-icon">
-<img src="./images/apple-image.png">
-</div>
-
-<div class="client-details">
-<h3>Apple, Inc.</h3>
-
-<div class="skill-tags">
-<span>UI/UX</span>
-<span>Frontend Development</span>
-</div>
-
-<p>
-I’ve had the pleasure of working with multiple Fortune 500 companies,
-designing and implementing both frontend and backend.
-</p>
-</div>
-</div>
-
-<div class="client-box">
-<div class="client-icon">
-<img src="./images/apple-image.png">
-</div>
-
-<div class="client-details">
-<h3>Apple, Inc.</h3>
-
-<div class="skill-tags">
-<span>UI/UX</span>
-<span>Frontend Development</span>
-</div>
-
-<p>
-I’ve had the pleasure of working with multiple Fortune 500 companies,
-designing and implementing both frontend and backend.
-</p>
-</div>
-</div>
-
-</section>
-
-<!-- CONTACT -->
-
-<section id="contactArea">
-
-<div class="section-heading">
-<h2>Hire me</h2>
-<p>Feel free to contact me any time, through any method below</p>
-</div>
-
-<div class="contact-layout">
-
-<form class="message-form">
-
-<label>Name</label> <input type="text" placeholder="Enter your name">
-
-<label>Email</label> <input type="email" placeholder="Enter your email">
-
-<label>Message</label>
-
-<textarea rows="6" placeholder="Write your message..."></textarea>
-
-<button class="submit-btn">Send it!</button>
-
-</form>
-
-<div class="contact-side">
-
-<p class="phone-number">555-555-1234</p>
-<a href="#" class="email-link">email@mydomain.com</a>
-
-<div class="social-set">
-<div class="social-circle">S</div>
-<div class="social-circle">T</div>
-</div>
-
-</div>
-
-</div>
-
-</section>
+        <div class="social-set" aria-label="Social links">
+          <a class="social-circle" href="#" aria-label="Social S">S</a>
+          <a class="social-circle" href="#" aria-label="Social T">T</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
 </main>
 
